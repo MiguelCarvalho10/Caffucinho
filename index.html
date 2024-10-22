@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>Alteração de senha</title>
+  <title>Recuperação de senha</title>
 </head>
 <body>
     <style>
@@ -25,17 +25,17 @@
         float: right;
         background-color: #F5F5DC;
     }
-
     @media (max-width: 1300px) {
 
-      .left-section{
-        display: none;
-      }
-      .right-section{
-        width: 100%;
-      }
-      
-    }
+.left-section{
+  display: none;
+}
+.right-section{
+  width: 100%;
+}
+
+
+}
     </style>
   
   <div class="left-section">
@@ -58,18 +58,14 @@
   
   <div class="right-section">
     <div id="titulo">
-      <h1 class="titulo-subtitulo" id="id-titulo">Informe sua nova senha</h1>
-      <p id="subtitulo" class="titulo-subtitulo">Crie uma senha nova</p>
+      <h1 class="titulo-subtitulo" id="id-titulo">Recupere sua senha:</h1>
+      <p id="id-subtitulo" class="titulo-subtitulo">Enviaremos um código de quatro dígitos para o seu e-mail!</p>
       
       <style>
         
         @font-face {
          font-family: 'BalooTamma';
          src: url('BalooTamma-Regular.ttf') format('truetype');
-        }
-        @font-face {
-          font-family: 'BTR';
-          src: url('BalooTamma2-Medium.ttf') format('truetype');
         }
 
         .titulo-subtitulo {
@@ -78,156 +74,173 @@
 
         }
         #id-titulo{
-          z-index: 3;
-          padding-top: 5%;
-            padding-left: 5%;
-            font-size: 200%;
-            font-family: 'BalooTamma';
+            padding: 5% 5% 0 5%;
+            font-size: 350%;
         }
-        #subtitulo{
-            z-index: 1;
-            margin-top: -3%;
+        #id-subtitulo{
             padding-left: 5%;
-            font-size: 400%;
-            font-family: 'BalooTamma';
+            font-size: 170%;
             
         }
       </style>
-      <div id="div-campo-senha">
-      <h2 class="titulo-campos">Senha</h2>
-      <input maxlength="64" type="password" id="campo-insercao1">
-      <img id="im-cathead" src="Cat Head.png" alt="im1">
-      </div>
+    
+</div>
+
+    <div id="div-campos">
+      <input maxlength="4" type="text" id="campo-insercao" placeholder="1234">
+      <img id="Im3" alt="Imagem 3" src="código.png">
       <style>
-        #div-campo-senha{
-          margin-top: 7%;
-          width: 100%;
+        #Im3{
+            padding-left: 20%;
+            width: 70%;
+        }
+        #campo-insercao {
+            width: 50%;
+            margin-top: 10%;
+            background-color: rgb(0, 0, 0, 0);
+            border-radius: 30px;
+            border: 0;
+            margin-left: 21%;
+            
+            font-size: 600%;
+            letter-spacing: 5vw;
+        }
+        @media (max-width: 1655px){
+          
+          #campo-insercao {
+            width: 55%;
+            letter-spacing: 4vw;
+          }
+        }
+        @media(max-width: 1300px){
+          #campo-insercao{
+            font-size: 600%;
+            letter-spacing: 8.5vw;
+            
+}
+        }
+        @media(max-width:1030px){
+          #campo-insercao{
+            font-size: 550%;
+            letter-spacing: 8vw;
+}
+        }
+        @media(max-width: 900px){
+          #campo-insercao{
+            font-size: 400%;
+            letter-spacing: 9vw;
+          }
+        }
+@media(max-width: 800px){
+          
+          #campo-insercao{
+            font-size: 300%;
+            letter-spacing: 8.5vw;
+            padding-left: 3%;
+}}
+
+@media(max-width: 600px){
+          
+          #campo-insercao{
+            font-size: 200%;
+            letter-spacing: 9vw;           
+}
           
         }
-      #campo-insercao1{
-        width: 80%;
-        margin-left: 5%;
-        padding: 1.5%;
-        border-radius: 20px;
-        border-color: #693F20;
-        font-family: 'BTR';
-      }
-      #im-cathead {
-    margin-left: -4%;
-    margin-top: 0.6%;
-    position: absolute;
-    font-family: 'BTR';
-    
-  }
-    </style>
+      </style>
+    </div>
 
-<div id="div-campo-senha2">
-  <h2 class="titulo-campos">Confirme sua senha</h2>
-  <input maxlength="64" type="password" id="campo-insercao2">
-  <img id="im-cathead2" src="Cat Head.png" alt="im1">
-  </div>
-  <style>
-    #div-campo-senha2{
-      
-      width: 100%;
-      margin-top: 5%;
-      
-    }
-    .titulo-campos{
-      font-family: 'BTR';
-      color: rgb(0, 0, 0);
-      margin-left: 6%;
-    }
-  #campo-insercao2{
-    width: 80%;
-    margin-left: 5%;
-    padding: 1.7%;
-    border-radius: 20px;
-    border-color: #693F20;
-    
-  }
-  #im-cathead2{
-    margin-left: -4%;
-    margin-top: 0.6%;
-    position: absolute;
-    
-  }
-  @media (max-width: 1300px) {
-    #im-cathead2 {
-        margin-left: -7%;
-        margin-top: 1.2%;
-        position: absolute;
-      }
-  }
-  @media (max-width: 792px) {
-    #im-cathead2 {
-      
-        margin-left: -8%;
-        margin-top: 1.2%;
-        position: absolute;
-      }
-  }
-  @media (max-width: 678px) {
-    #im-cathead2 {
-        width: 8%;
-        margin-left: -10%;
-        margin-top: 1.2%;
-        position: absolute;
-    }
-  }
-      @media (max-width: 1300px) {
-    #im-cathead {
-        margin-left: -7%;
-        margin-top: 1.2%;
-        position: absolute;
-      }
-  }
-  @media (max-width: 792px) {
-    #im-cathead {
-      
-        margin-left: -8%;
-        margin-top: 1.2%;
-        position: absolute;
-      }
-  }
-  @media (max-width: 678px) {
-    #im-cathead {
-        width: 8%;
-        margin-left: -10%;
-        margin-top: 1.8%;
-        position: absolute;
-      }
-  }
-  .titulo-campos{
-      font-family: 'BTR';
-      color: rgb(0, 0, 0);
-      margin-left: 6%;
-    }
-</style>
-
-<button id="botao-confirmar" class="botoes">CONFIRMAR</button>
+    <div id="div-botoes">
+      <button id="botao-reenviar" class="botoes" onclick="visibilidade()">Não recebeu o E-mail?! Clique Aqui!</button>
+      <button id="botao-confirmar" class="botoes">CONFIRMAR</button>
       <style>
-        #botao-confirmar {
-            margin-left: 35%;
+        #botao-reenviar {
+            margin-left: 15vw;
             margin-top: 5%;
             height: auto;
             width: auto;
-            padding: 0% 3% 0% 3%;
-            font-family: 'BalooTamma';
-            font-size: 200%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        #botao-confirmar {
+            margin-left: 23vw;
+            margin-top: 5%;
+            height: auto;
+            width: auto;
+            padding-left: 3%;
+            padding-right: 3%;
         }
         .botoes {
             color: white;
             background-color: black;
             padding: 1%;
             border-color: transparent;
-            border-radius: 3000px;
+            border-radius: 50px;
             font-size: 150%;
             width: 80%; 
             
         }
+        @media (max-width: 1300px ){
+          #botao-reenviar {
+            margin-right: 10vw;
+            
+        }
+        }
+         
       </style>
-  </div>  
+      <script>
+      function ajustarMargem() {
+        const elemento = document.querySelector('#botao-reenviar');
+        const larguraTela = window.innerWidth;
+      
+        if (larguraTela > 800 && larguraTela < 1300) {
+          elemento.style.fontSize = "100%";
+        } else {
+          elemento.style.fontSize = "300%";
+        }
+      
+        // Definir um valor mínimo e máximo de margem
+        const margemInicial = 15; // Margem inicial em %
+        const margemFinal = 0;    // Margem final em %
+      
+        // Calcular a margem gradativamente baseado na largura da tela
+        const novaMargem = margemInicial * (larguraTela / 1200); 
+      
+        if (novaMargem < margemFinal) {
+          elemento.style.marginLeft = margemFinal + "%";
+        } else {
+          elemento.style.marginLeft = novaMargem + "%";
+        }
+      
+      
+      // Executa a função ao carregar a página
+      window.onload = ajustarMargem;
+      
+      // Adiciona o ajuste da margem sempre que a tela for redimensionada
+      window.onresize = ajustarMargem;
+      }
+    </script>      
+      
+      <button id="botao-popup" class="botoes">Um novo código vai ser enviado para o seu e-mail!</button>
+  <style>
+    #botao-popup{
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        margin-top: 15%;
+        border-radius: 50px 50px 50px 50px;
+        visibility: hidden;
+    }
+  
+  </style>
+  <script>
+    function visibilidade() {
+        var button = document.getElementById('botao-popup')
+            button.style.visibility = "visible"
+    }
+  </script>
+    </div>
   </div>
+  
+  
 </body>
 </html>
