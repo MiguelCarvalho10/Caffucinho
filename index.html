@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Alteração de senha</title>
+</head>
+<body>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .left-section{
+        height: 100vb;
+        width: 40%;
+        float: left;
+        background-color: #C09D7A;
+    }
+    .right-section{
+        height: 100vb;
+        width: 60%;
+        float: right;
+        background-color: #F5F5DC;
+    }
+
+    @media (max-width: 1300px) {
+
+      .left-section{
+        display: none;
+      }
+      .right-section{
+        width: 100%;
+      }
+      
+    }
+    </style>
+  
+  <div class="left-section">
+    <img id="im1" class="imagens" src="cat-tiltedhead-black.png" alt="Imagem 1">
+    <img id="im2" class="imagens" src="paws.png" alt="Imagem 2">
+    <style>
+    #im1 {
+        margin-left: 7%;
+        position: absolute;
+        width: 37%;
+        height: 100vb;
+    }
+    #im2{
+        width: 65%;
+        height: 100vb;
+    }
+    </style>
+  </div>
+
+  
+  <div class="right-section">
+    <div id="titulo">
+      <h1 class="titulo-subtitulo" id="id-titulo">Informe sua nova senha</h1>
+      <p id="subtitulo" class="titulo-subtitulo">Crie uma senha nova</p>
+      
+      <style>
+        
+        @font-face {
+         font-family: 'BalooTamma';
+         src: url('BalooTamma-Regular.ttf') format('truetype');
+        }
+        @font-face {
+          font-family: 'BTR';
+          src: url('BalooTamma2-Medium.ttf') format('truetype');
+        }
+
+        .titulo-subtitulo {
+         font-family: 'BalooTamma';
+         color: black;
+
+        }
+        #id-titulo{
+          z-index: 3;
+          padding-top: 5%;
+            padding-left: 5%;
+            font-size: 200%;
+            font-family: 'BalooTamma';
+        }
+        #subtitulo{
+            z-index: 1;
+            margin-top: -3%;
+            padding-left: 5%;
+            font-size: 400%;
+            font-family: 'BalooTamma';
+            
+        }
+      </style>
+      <div id="div-campo-senha">
+      <h2 class="titulo-campos">Senha</h2>
+      <input maxlength="64" type="password" id="campo-insercao1">
+      <img id="im-cathead" src="Cat Head.png" alt="im1">
+      </div>
+      <style>
+        #div-campo-senha{
+          margin-top: 7%;
+          width: 100%;
+          
+        }
+      #campo-insercao1{
+        width: 80%;
+        margin-left: 5%;
+        padding: 1.5%;
+        border-radius: 20px;
+        border-color: #693F20;
+        font-family: 'BTR';
+      }
+      #im-cathead {
+    margin-left: -4%;
+    margin-top: 0.6%;
+    position: absolute;
+    font-family: 'BTR';
+    
+  }
+    </style>
+
+<div id="div-campo-senha2">
+  <h2 class="titulo-campos">Confirme sua senha</h2>
+  <input maxlength="64" type="password" id="campo-insercao2">
+  <img id="im-cathead2" src="Cat Head.png" alt="im1">
+  </div>
+  <style>
+    #div-campo-senha2{
+      
+      width: 100%;
+      margin-top: 5%;
+      
+    }
+    .titulo-campos{
+      font-family: 'BTR';
+      color: rgb(0, 0, 0);
+      margin-left: 6%;
+    }
+  #campo-insercao2{
+    width: 80%;
+    margin-left: 5%;
+    padding: 1.7%;
+    border-radius: 20px;
+    border-color: #693F20;
+    
+  }
+  #im-cathead2{
+    margin-left: -4%;
+    margin-top: 0.6%;
+    position: absolute;
+    
+  }
+  @media (max-width: 1300px) {
+    #im-cathead2 {
+        margin-left: -7%;
+        margin-top: 1.2%;
+        position: absolute;
+      }
+  }
+  @media (max-width: 792px) {
+    #im-cathead2 {
+      
+        margin-left: -8%;
+        margin-top: 1.2%;
+        position: absolute;
+      }
+  }
+  @media (max-width: 678px) {
+    #im-cathead2 {
+        width: 8%;
+        margin-left: -10%;
+        margin-top: 1.2%;
+        position: absolute;
+    }
+  }
+      @media (max-width: 1300px) {
+    #im-cathead {
+        margin-left: -7%;
+        margin-top: 1.2%;
+        position: absolute;
+      }
+  }
+  @media (max-width: 792px) {
+    #im-cathead {
+      
+        margin-left: -8%;
+        margin-top: 1.2%;
+        position: absolute;
+      }
+  }
+  @media (max-width: 678px) {
+    #im-cathead {
+        width: 8%;
+        margin-left: -10%;
+        margin-top: 1.8%;
+        position: absolute;
+      }
+  }
+  .titulo-campos{
+      font-family: 'BTR';
+      color: rgb(0, 0, 0);
+      margin-left: 6%;
+    }
+</style>
+
+<button id="botao-confirmar" class="botoes">CONFIRMAR</button>
+      <style>
+        #botao-confirmar {
+            margin-left: 35%;
+            margin-top: 5%;
+            height: auto;
+            width: auto;
+            padding: 0% 3% 0% 3%;
+            font-family: 'BalooTamma';
+            font-size: 200%;
+        }
+        .botoes {
+            color: white;
+            background-color: black;
+            padding: 1%;
+            border-color: transparent;
+            border-radius: 3000px;
+            font-size: 150%;
+            width: 80%; 
+            
+        }
+      </style>
+  </div>  
+  </div>
+</body>
+</html>
